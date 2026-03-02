@@ -1,4 +1,4 @@
- body{
+body{
 
     margin: 0;
 
@@ -213,6 +213,8 @@
     transform: scale(1.03);
 
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    
+    color: #3f51b5;
 
 }
 
@@ -363,7 +365,9 @@ form button {
     cursor: pointer;
 
 }
-
+@media screen {
+    
+}
 
 
 
@@ -376,5 +380,10 @@ a {
 
     color: inherit;
 
+}
+
+::placeholder {
+    color: blue;
+    background: turquoise;
 }
  
