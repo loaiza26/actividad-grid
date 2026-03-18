@@ -1,208 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShuraTube</title>
-
+    <title>ShuraTube - Proyecto Final</title>
     <link rel="stylesheet" href="ejemplo-web.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
-
 <body>
 
-<header class="Buscador">
-    <div class="logo-imagen">
-        <strong>ShuraTube</strong>
-    </div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="overlay"></label>
 
-    <form>
-        <input type="text" placeholder="Buscar">
-        <button type="submit">🔍</button>
-    </form>
-
-    <div class="iconos-derecha">
-        <button class="btn-subir">Crear</button>
-        <div class="perfil-usuario"></div>
-    </div>
-
-</header>
-
-
-<nav class="nav">
-
-    <ul class="nav-list">
-
-        <li>
-            <i class="fa-solid fa-house"></i>
-            <a href="#" class="nav-link">Inicio</a>
-        </li>
-
-        <li>
-            <a href="#" class="nav-link">Tendencias</a>
-        </li>
-
-        <li>
-            <a href="#" class="nav-link">Suscripciones</a>
-        </li>
-
-        <li>
-            <a href="#" class="nav-link">Biblioteca</a>
-        </li>
-
-    </ul>
-
-</nav>
-
-
-<main class="contenedor-videos">
-
-
-
-    <div class="caja video">
-
-        <a href="video1.html">
-
-            <div class="miniatura">
-                <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg">
+    <header class="header">
+        <div class="header-left">
+            <label for="menu-toggle" class="hamburguesa">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="logo">
+                <i class="fa-brands fa-youtube" style="color: red;"></i>
+                <strong>ShuraTube</strong>
             </div>
-
-        </a>
-
-        <div class="info-video">
-
-            <div class="foto-canal">
-                <img src="https://i.pravatar.cc/100?img=1">
-            </div>
-
-            <div class="texto">
-
-                <h3>Mi Primer Video</h3>
-
-                <p>Canal Shura</p>
-
-                <span>100k vistas • hace 1 día</span>
-
-            </div>
-
         </div>
 
+        <form class="buscador-container">
+            <input type="text" placeholder="Buscar">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <div class="header-icons">
+            <button class="btn-crear"><i class="fa-solid fa-video"></i> <span>Crear</span></button>
+            <div class="usuario-perfil"></div>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <ul class="nav-list">
+            <li><a href="#" class="nav-link"><i class="fa-solid fa-house"></i> <span>Inicio</span></a></li>
+            <li><a href="#" class="nav-link"><i class="fa-solid fa-bolt"></i> <span>Shorts</span></a></li>
+            <li><a href="#" class="nav-link"><i class="fa-solid fa-clapperboard"></i> <span>Suscripciones</span></a></li>
+            <hr style="margin: 10px 0; border: none; border-top: 1px solid #e5e5e5;">
+            <li><a href="#" class="nav-link"><i class="fa-solid fa-clock-rotate-left"></i> <span>Historial</span></a></li>
+            <li><a href="#" class="nav-link"><i class="fa-solid fa-thumbs-up"></i> <span>Me gusta</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="filtros-bar">
+        <button class="chip activo">Todo</button>
+        <button class="chip">Música</button>
+        <button class="chip">En vivo</button>
+        <button class="chip">Iglesia</button>
+        <button class="chip">Tendencias</button>
+        <button class="chip">Recientes</button>
     </div>
 
-
-
-  
-
-    <div class="caja video">
-
-        <a href="video4.html">
-
-            <div class="miniatura">
-
-                <img src="https://i.ytimg.com/vi/A9WpnUdHLhw/hqdefault.jpg">
-
+    <main class="video-grid">
+        <article class="video-card">
+            <div class="thumbnail">
+                <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Miniatura">
             </div>
-
-        </a>
-
-        <div class="info-video">
-
-            <div class="foto-canal">
-                <img src="carapa catedral.jpg">
+            <div class="video-info">
+                <div class="canal-foto"><img src="https://i.pravatar.cc/100?img=1"></div>
+                <div class="video-text">
+                    <h3>Mi Primer Video en ShuraTube</h3>
+                    <p>Canal Shura</p>
+                    <span>100k vistas • hace 1 día</span>
+                </div>
             </div>
+        </article>
 
-            <div class="texto">
-
-                <h3>Actividad 13 de febrero 2026</h3>
-
-                <p>La Gran Carpa Catedral</p>
-
-                <span>Transmisión en vivo • Iglesia</span>
-
+        <article class="video-card">
+            <div class="thumbnail">
+                <iframe src="https://drive.google.com/file/d/1GOAZhxAKeAnUFugBx-S7AjI6qAwIoHbl/preview"></iframe>
             </div>
-
-        </div>
-
-    </div>
-
-
-
-  
-
-    <div class="caja video">
-
-        <div class="miniatura">
-
-            <iframe width="100%" height="200"
-                src="https://drive.google.com/file/d/1GOAZhxAKeAnUFugBx-S7AjI6qAwIoHbl/preview"
-                allowfullscreen>
-            </iframe>
-
-        </div>
-
-        <div class="info-video">
-
-            <div class="foto-canal">
-                <img src="carapa catedral.jpg">
+            <div class="video-info">
+                <div class="canal-foto"><img src="carapa catedral.jpg"></div>
+                <div class="video-text">
+                    <h3>Actividad grabada - Mayo 2024</h3>
+                    <p>La Gran Carpa Catedral</p>
+                    <span>Google Drive Cloud</span>
+                </div>
             </div>
+        </article>
 
-            <div class="texto">
-
-                <h3>Actividad grabada - Mayo 2024</h3>
-
-                <p>La Gran Carpa Catedral</p>
-
-                <span>Google Drive Cloud</span>
-
+        <article class="video-card">
+            <div class="thumbnail">
+                <iframe src="https://drive.google.com/file/d/1pkYusbKKjyEZFmV5aNTrHvIJcKEvFAxJ/preview"></iframe>
             </div>
-
-        </div>
-
-    </div>
-
-
-
-    
-
-    <div class="caja video">
-
-        <div class="miniatura">
-
-            <iframe width="100%" height="200"
-                src="https://drive.google.com/file/d/1pkYusbKKjyEZFmV5aNTrHvIJcKEvFAxJ/preview"
-                allowfullscreen>
-            </iframe>
-
-        </div>
-
-        <div class="info-video">
-
-            <div class="foto-canal">
-                <img src="carapa catedral.jpg">
+            <div class="video-info">
+                <div class="canal-foto"><img src="carapa catedral.jpg"></div>
+                <div class="video-text">
+                    <h3>Transmisión en vivo - Actividad Especial</h3>
+                    <p>La Gran Carpa Catedral</p>
+                    <span>En vivo ahora</span>
+                </div>
             </div>
+        </article>
 
-            <div class="texto">
+            <article class="video-card">
+                <div class="thumbnail">
+                    <iframe src="https://drive.google.com/file/d/1fN1k1i-yfgMkz7oVrlGTjqS8MuEVe0v-/preview"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="canal-foto"><img src="carapa catedral.jpg"></div>
+                    <div class="video-text">
+                        <h3>Actividad Especial</h3>
+                        <p>La Gran Carpa Catedral</p>
+                        <span>En vivo ahora</span>
+                    </div>
+                </div>
 
-                <h3>Actividad grabada</h3>
+            </article>
+            <article class="video-card">
+                <div class="thumbnail">
+                    <iframe src="https://drive.google.com/file/d/1RZanhlSk9fKDCDi-TwZC9IbrdHIZNq7a/preview"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="canal-foto"><img src="carapa catedral.jpg"></div>
+                    <div class="video-text">
+                        <h3>Actividad Especial</h3>
+                        <p>La Gran Carpa Catedral</p>
+                        <span>Google Drive Cloud</span>
+                    </div>
+                </div>
+            </article>
+            <article class="video-card">
+                <div class="thumbnail">
+                    <iframe src="https://drive.google.com/file/d/1HwPLoT-62tzbYzL7IRBfa05EXw4gXECT/preview"></iframe>
+                </div>
+                <div class="video-info">
+                    <div class="canal-foto"><img src="carapa catedral.jpg"></div>
+                    <div class="video-text  ">
+                        <h3>Actividad grabada - febrero 2026</h3>
+                        <p>La Gran Carpa Catedral</p>
+                        <span>Google Drive Cloud</span>
+                    </div>
+                </div>
+            </article>
 
-                <p>La Gran Carpa Catedral</p>
 
-                <span>Google Drive Cloud</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</main>
+        
+    </main>
 
 </body>
 </html>
-
-  
-
-    
