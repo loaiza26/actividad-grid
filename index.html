@@ -3,38 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShuraTube - Proyecto Final</title>
+    <title>YouTube</title>
     <link rel="stylesheet" href="ejemplo-web.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
-    <input type="checkbox" id="menu-toggle">
+ <input type="checkbox" id="menu-toggle" hidden>
     <label for="menu-toggle" class="overlay"></label>
 
-    <header class="header">
-        <div class="header-left">
-            <label for="menu-toggle" class="hamburguesa">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <div class="logo">
-                <i class="fa-brands fa-youtube" style="color: red;"></i>
-                <strong>ShuraTube</strong>
-            </div>
+
+<header class="header">
+    <div class="header-left">
+        <label for="menu-toggle" class="hamburguesa">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <div class="logo">
+            <i class="fa-brands fa-youtube" style="color: #FF0000; font-size: 1.5rem;"></i>
+            <span style="font-weight: bold; letter-spacing: -1px;">YouTube</span>
         </div>
+    </div>
 
-        <form class="buscador-container">
-            <input type="text" placeholder="Buscar">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
 
-        <div class="header-icons">
-            <button class="btn-crear"><i class="fa-solid fa-video"></i> <span>Crear</span></button>
-            <div class="usuario-perfil"></div>
+    <form class="buscador-container">
+        <input type="text" placeholder="Buscar">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+
+
+    <div class="header-icons">
+        <button class="btn-crear"><i class="fa-solid fa-video"></i> <span>Crear</span></button>
+        <button class="btn-campana"><i class="fa-regular fa-bell"></i></button>
+        <div class="usuario-perfil">
+            <img src="https://i.pravatar.cc/100?img=1" alt="Perfil" style="width:100%; height:100%; object-fit:cover;">
         </div>
-    </header>
+    </div>
+</header>
 
-    <nav class="sidebar">
+
+   
+   <nav class="sidebar">
+        <div class="sidebar-header">
+         <label for="menu-toggle" class="hamburguesa"><i class="fa-solid fa-bars"></i></label>
+         <div class="logo">
+            <i class="fa-brands fa-youtube" style="color: red;"></i>
+            <strong>YouTube</strong>
+         </div>
+        </div>
         <ul class="nav-list">
             <li><a href="#" class="nav-link"><i class="fa-solid fa-house"></i> <span>Inicio</span></a></li>
             <li><a href="#" class="nav-link"><i class="fa-solid fa-bolt"></i> <span>Shorts</span></a></li>
@@ -69,6 +83,9 @@
             </div>
         </article>
 
+
+
+
         <article class="video-card">
             <div class="thumbnail">
                 <iframe src="https://drive.google.com/file/d/1GOAZhxAKeAnUFugBx-S7AjI6qAwIoHbl/preview"></iframe>
@@ -82,6 +99,9 @@
                 </div>
             </div>
         </article>
+
+
+
 
         <article class="video-card">
             <div class="thumbnail">
@@ -97,6 +117,9 @@
             </div>
         </article>
 
+
+
+
             <article class="video-card">
                 <div class="thumbnail">
                     <iframe src="https://drive.google.com/file/d/1fN1k1i-yfgMkz7oVrlGTjqS8MuEVe0v-/preview"></iframe>
@@ -109,6 +132,9 @@
                         <span>En vivo ahora</span>
                     </div>
                 </div>
+
+
+
 
             </article>
             <article class="video-card">
@@ -139,8 +165,20 @@
             </article>
 
 
-        
+
+
+
+
+
+
+       
     </main>
+
+
+
 
 </body>
 </html>
+
+
+  
